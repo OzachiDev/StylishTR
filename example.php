@@ -1,5 +1,6 @@
 <?php
 require('StylishTR.php');
+read();
 ?>
 <!DOCTYPE html>
 <html>
