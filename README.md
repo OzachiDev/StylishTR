@@ -30,4 +30,4 @@ File | Utility
 ```translation_del.php``` | This file allows you to delete variables with their translations. You should secure it.
 ```translations.db``` | This file contains all the variables and their translations. It already contains default translations for example.php that you can delete to start adding your own translations!
 
-__You can contact me on Twitter if you have any question: https://twitter.com/Ozachi_ or on Discord: Loïc#6237__
+You can contact me on Twitter if you have any question: https://twitter.com/Ozachi_ or on Discord: Loïc#6237
