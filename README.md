@@ -16,7 +16,7 @@ read();
 StylishTR will read your HTML code and replace the variables called {variable} by their translation provided in translations.db
 
 ## What about the user?
-StylishTR will detect automatically the language of your visitors. If you want to use another language, you can provide ?l=fr/en/es/.. as GET arguments on your page.
+StylishTR will detect automatically the language of your visitors. If you want to use another language, you can provide /?lang=fr/en/es/.. as GET argument on your page.
 
 # What does the repository contains?
 The repository is provided with 6 files:
