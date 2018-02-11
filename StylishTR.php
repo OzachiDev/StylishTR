@@ -1,12 +1,17 @@
 <?php
 function tr($c) {
 	global $tr;
-	if (isset($_GET['l'])) {
-		$l = $_GET['l'];
-	} else {
-		$l = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+	if (isset($_GET['lang'])) {
+		$lang = $_GET['lang'];
+		if ($lang != "fr" && $lang != "en" && $lang != "es") {
+			unset($lang);
+		}
 	}
-	return preg_replace_callback("/{([a-z0-9]{1,})}/", function($b) use ($tr,$l) {return $tr[$b[1]][$l];}, $c);
+	if (!isset($lang)) {
+		$lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+		if ($lang != "fr" && $lang != "en" && $lang != "es") {$lang = "en";}
+	}
+	return preg_replace_callback("/{([a-z0-9]{1,})}/", function($b) use ($tr,$lang) {return $tr[$b[1]][$lang];}, $c);
 }
 function read() {
 	global $tr;
