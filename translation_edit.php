@@ -6,7 +6,7 @@
 <body>
 	<h2>Form</h2>
 	<form action="?<?php if (isset($_POST['name'])) {echo 'save';} ?>" method="post">
-		Name <input type="text" name="name" placeholder="greeting" value="<?php if (isset($_POST['name'])) {echo $_POST['name'];} ?>" autocomplete="off"><br>
+		Name <input type="text" name="name" placeholder="example/greeting" value="<?php if (isset($_POST['name'])) {echo $_POST['name'];} ?>" autocomplete="off"><br>
 		<?php
 		if (isset($_GET['save']) && isset($_POST['name'])) {
 			if (file_exists('translations.db')) {$table = unserialize(file_get_contents('translations.db'));}

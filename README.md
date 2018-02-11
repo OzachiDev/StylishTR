@@ -9,11 +9,11 @@ require('StylishTR.php');
 ```
 And just before the beggining of the HTML code:
 ```php
-read();
+tr_read();
 ```
 
 ## How does it work?
-StylishTR will read your HTML code and replace the variables called {variable} by their translation provided in translations.db
+StylishTR will read your HTML code and replace the variables called {title/variable} by their translation provided in translations.db
 
 ## What about the user?
 StylishTR will detect automatically the language of your visitors. If you want to use another language, you can provide /?lang=fr/en/es/.. as GET argument on your page.

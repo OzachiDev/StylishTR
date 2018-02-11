@@ -6,7 +6,7 @@
 <body>
 	<h2>Form</h2>
 	<form action="?" method="post">
-		Name <input type="text" name="name" placeholder="greeting" autocomplete="off"><br>
+		Name <input type="text" name="name" placeholder="example/greeting" autocomplete="off"><br>
 		EN <input type="text" name="en" placeholder="Hello" autocomplete="off"><br>
 		FR <input type="text" name="fr" placeholder="Bonjour" autocomplete="off"><br>
 		ES <input type="text" name="es" placeholder="Buenos dias" autocomplete="off"><br>
